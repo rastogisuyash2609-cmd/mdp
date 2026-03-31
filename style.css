@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    background: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    overflow: hidden; /* Prevent scrolling on mobile */
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    padding: 10px;
+    text-align: center;
+    background: rgba(255,255,255,0.1);
+}
+
+.viewport {
+    position: relative;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #111;
+}
+
+#webcam {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fill the screen */
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.controls {
+    padding: 20px;
+    background: #1a1a1a;
+    border-top: 2px solid #333;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    background: #00ff88;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.result-card {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}

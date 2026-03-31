@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mobile AI Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header>
+            <h2>Object Detection</h2>
+            <div id="status">Initializing...</div>
+        </header>
+
+        <div class="viewport">
+            <video id="webcam" autoplay playsinline muted></video>
+            <canvas id="overlay"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="switchBtn">Switch Camera</button>
+            <div class="result-card">
+                <strong>Top Detection:</strong>
+                <span id="best-label">None</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="edge-impulse-standalone.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
